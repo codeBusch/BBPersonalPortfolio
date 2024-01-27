@@ -1,4 +1,10 @@
+using DataLayer;
+using Microsoft.EntityFrameworkCore;
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ApplicationDbContext>(opt =>opt.UseSqlServer(builder.Configuration.GetConnectionString("constr")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
