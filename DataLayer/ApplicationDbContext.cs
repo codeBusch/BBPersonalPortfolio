@@ -12,9 +12,9 @@ public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
-    }
+    }   
     public  DbSet<SocialMedia> SocialMedias { get; set; }
-    public DbSet<Service> Services { get; set; }
+    public DbSet<ModelService> Services { get; set; }
     public DbSet<About> Abouts { get; set; }
     public DbSet<Contact> Contacts { get; set; }
     public DbSet<Message> Messages { get; set; }

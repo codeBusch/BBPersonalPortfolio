@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Service : BaseModel
+    public class ModelService : BaseModel
     {
     
 
