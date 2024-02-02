@@ -17,29 +17,29 @@ namespace Business.Content
             _about = about;
         }
 
-        public void TAdd(About about)
+        public void TAdd(About t)
         {
-            _about.Add(about);
+          _about.Add(t);
         }
 
         public List<About> TGetAll()
         {
-           return _about.GetAll();
+            throw new NotImplementedException();
         }
 
         public About TGetById(int id)
         {
-           return _about.GetById(id);
+            throw new NotImplementedException();
         }
 
-        public void TRemove(About about)
+        public void TRemove(About t)
         {
-            _about.Remove(about);
+           _about.Remove(t);
         }
 
-        public void TUpdate(About about)
+        public void TUpdate(About t)
         {
-            _about.Update(about);
+            throw new NotImplementedException();
         }
     }
 }

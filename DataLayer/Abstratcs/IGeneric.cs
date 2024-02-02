@@ -11,6 +11,6 @@ namespace DataLayer.Abstratcs
         T GetById(int id);
         void Add(T entity);
         void Update(T entity);
-        void Delete(int id);
+       void Remove(T entity);   
     }
 }

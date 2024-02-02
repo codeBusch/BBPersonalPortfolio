@@ -20,11 +20,11 @@ public class GenericRepository<T> : IGeneric<T> where T : class
         _context.SaveChanges();
     }
 
-    public void Delete(int id)
-    {
-        _context.Remove(id);
-        _context.SaveChanges();
-    }
+    public void Remove(T entity)
+        {
+            _context.Remove(entity);
+            _context.SaveChanges();
+        }
 
     public List<T> GetAll()
     {
@@ -36,6 +36,8 @@ public class GenericRepository<T> : IGeneric<T> where T : class
     {
         return _context.Find<T>(id);
     }
+
+
 
     public void Update(T entity)
     {

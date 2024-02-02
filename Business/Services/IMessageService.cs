@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 
 namespace Business.Service;
 
-pulic interface IMessageService:IGenericService<Message>
+public interface IMessageService:IGenericService<Message>
 {
 }

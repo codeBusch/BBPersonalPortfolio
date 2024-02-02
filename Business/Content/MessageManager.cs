@@ -12,13 +12,13 @@ namespace Business.Content
     public class MessageManager : IGenericService<Message>, IMessageService
     {
         private readonly IMessage _message;
-        MessageManager()
+        MessageManager(IMessage message)
         {
-
+            _message = message;
         }        
         public void TAdd(Message t)
         {
-            
+            _message.Add(t);
         }
 
         public List<Message> TGetAll()

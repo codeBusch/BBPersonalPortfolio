@@ -34,7 +34,7 @@ public class ContactManager : IGenericService<Contact>, IContactService
 
     public void TRemove(Contact t)
     {
-        _contact.Delete(t);
+        _contact.Remove(t);
     }
 
     public void TUpdate(Contact contact)
