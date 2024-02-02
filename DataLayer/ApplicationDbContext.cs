@@ -19,5 +19,6 @@ public class ApplicationDbContext : DbContext
     public DbSet<Contact> Contacts { get; set; }
     public DbSet<Message> Messages { get; set; }
     public DbSet<Portfolio> Portfolios { get; set; }
+    public DbSet<Skill> Skills { get; set; }
    
 }
